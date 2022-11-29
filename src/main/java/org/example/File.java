@@ -12,7 +12,7 @@ public class File {
     Scanner scanner = null;
     try {
       scanner = new Scanner(new java.io.File(
-          "/home/mperminov/IdeaProjects/ScannerSample/src/main/resources/channels"));
+          "/Users/m.perminov/IdeaProjects/ScannerSample/src/main/resources/channels"));
     } catch (FileNotFoundException e) {
       System.out.println("Файл не найден");
     }
