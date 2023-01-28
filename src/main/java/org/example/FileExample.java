@@ -1,9 +1,10 @@
 package org.example;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class File {
+public class FileExample {
 
   private static final String NEWLINE = System.lineSeparator();
 
@@ -11,8 +12,8 @@ public class File {
     StringBuilder channels = new StringBuilder();
     Scanner scanner = null;
     try {
-      scanner = new Scanner(new java.io.File(
-          "/home/mperminov/IdeaProjects/ScannerSample/src/main/resources/channels"));
+      scanner = new Scanner(new File(
+          "/Users/m.perminov/IdeaProjects/ScannerSample/src/main/resources/channels"));
     } catch (FileNotFoundException e) {
       System.out.println("Файл не найден");
     }
